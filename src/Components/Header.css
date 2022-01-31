@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    color: white;
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+.navbar.changeColor {
+    color: black;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        background-color: transparent;
+    }
+    100% {
+        opacity: 1;
+        background: white;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+.noChange.change {
+    color: black;
+}
+.noChange {
+    color: white;
+}
+.down {
+    padding-top: 5px;
+}
+.drop {
+    display: none;
+}
+.extended li a:hover + .drop {
+    display: block;
+    animation: fadedIn 0.3s ease-in-out;
+}
+.drop:hover {
+    display: block;
+}
+@keyframes fadedIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+}
