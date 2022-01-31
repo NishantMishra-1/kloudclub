@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.react-icons {
+    vertical-align: middle;
+}
+.navbar {
+    color: white;
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+.navbar.changeColor {
+    color: black;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        background-color: transparent;
+        transform: scale(1.01);
+    }
+    100% {
+        opacity: 1;
+        background: white;
+        transform: scale(1);
+    }
+}
+@keyframes fadeOut {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+.noChange.change {
+    color: black;
+}
+.noChange {
+    color: white;
+}
+.down {
+    padding-top: 5px;
+}
+.drop {
+    display: none;
+}
+.extended li a:hover + .drop {
+    display: block;
+}
+.drop:hover {
+    display: block;
+}
