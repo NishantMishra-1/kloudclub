@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.react-icons {
-    vertical-align: middle;
-}
 .navbar {
     color: white;
     animation: fadeOut 0.5s ease-in-out forwards;
@@ -19,12 +16,10 @@
     0% {
         opacity: 0;
         background-color: transparent;
-        transform: scale(1.01);
     }
     100% {
         opacity: 1;
         background: white;
-        transform: scale(1);
     }
 }
 @keyframes fadeOut {
@@ -49,7 +44,18 @@
 }
 .extended li a:hover + .drop {
     display: block;
+    animation: fadedIn 0.3s ease-in-out;
 }
 .drop:hover {
     display: block;
+}
+@keyframes fadedIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
 }

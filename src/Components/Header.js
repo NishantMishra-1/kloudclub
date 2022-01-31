@@ -174,7 +174,6 @@ const ListItems1 = styled.ul`
     li {
         list-style: none;
         margin-right: 30px;
-        line-height: 40px;
         border-bottom: 0px solid white;
     }
     li a {
@@ -185,7 +184,7 @@ const ListItems1 = styled.ul`
         &:hover {
             color: orange;
         }
-        @media (max-width: 900px) {
+        @media (max-width: 960px) {
             font-size: 15px;
         }
     }
@@ -197,8 +196,10 @@ const DropDown = styled.ul`
     background-color: white;
     border-top: 2px solid green;
     line-height: 45px;
-    padding: 5px 15px;
-    color: black;
+    padding: 5px 25px;
+    li a {
+        color: black;
+    }
 `;
 
 const ListItems2 = styled.ul`
@@ -221,7 +222,7 @@ const ListItems2 = styled.ul`
         &:hover {
             color: orange;
         }
-        @media (max-width: 900px) {
+        @media (max-width: 960px) {
             font-size: 15px;
         }
     }
