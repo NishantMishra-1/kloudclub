@@ -1,0 +1,15 @@
+@import url('../App.css');
+
+
+.location:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+.email:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+.call:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
