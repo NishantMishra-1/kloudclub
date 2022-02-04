@@ -1,0 +1,54 @@
+@import url("../App.css");
+.main_section {
+  position: relative;
+  height: 100vh;
+  background-color: var(--main-color);
+  width: 100vw;
+}
+.main_section h1 {
+    line-height: 90vh;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+.main_section img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: appear 1s ease-out forwards;
+}
+.about_inner {
+  margin: 5%;
+}
+.about_inner .about_inner_main {
+  display: flex;
+
+}
+.about_inner .about_inner_main .about_inner_right ul li {
+  list-style: none;
+}
+.about_inner .about_inner_main .about_inner_right ul li span {
+  color: green;
+}
+.about_inner .about_inner_main .about_inner_right ul li p {
+  display: inline;
+  padding-left: 5px;
+  text-align: justify;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
