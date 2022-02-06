@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Card from "../Card";
-
+// import Cloud from "../../assets/Cloud.png";
 function Services() {
     return (
         <Container>

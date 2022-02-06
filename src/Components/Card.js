@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+// import "../assets/AI.png"
 
 function Card({ head, para, image }) {
     return (

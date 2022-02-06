@@ -1,20 +1,29 @@
 import "./App.css";
-import Header from "./Components/Header";
-import styled from "styled-components";
 import Services from "./Components/Pages/Services";
+import Home from "./pages/Home";
+import { Redirect, Route, Switch } from "react-router-dom";
+import ContactUs from "./pages/ContactUs";
+import Layout from "./Layout/Layout";
 
 function App() {
     return (
-        <Container>
-            <Header />
-            <Services />
-        </Container>
+        <Layout>
+            <Switch>
+                <Route path="/" exact>
+                    <Home />
+                </Route>
+                <Route path="/contact" exact>
+                    <ContactUs />
+                </Route>
+                <Route path="/services" exact>
+                    <Services />
+                </Route>
+                <Route path="*">
+                    <Redirect to="/" />
+                </Route>
+            </Switch>
+        </Layout>
     );
 }
 
 export default App;
-
-const Container = styled.div`
-    background: lightblue;
-    width: 100%;
-`;

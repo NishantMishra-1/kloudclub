@@ -65,7 +65,7 @@ function Header() {
                     </li>
                     <li>
                         <a
-                            href="#project"
+                            href="#service"
                             className={
                                 colorChange ? "noChange change" : "noChange"
                             }

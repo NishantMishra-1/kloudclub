@@ -1,0 +1,48 @@
+@import url("../App.css");
+.main {
+  position: relative;
+  top: 80;
+  height: 90vh;
+  background: var(--main-color);
+}
+.main h1 {
+  position: absolute;
+  font-size: 3rem;
+  margin-left: 40vw;
+  color: white;
+  line-height: 90vh;
+  text-align: center;
+}
+.image {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+.form-group textarea {
+  resize: none;
+}
+
+.contact {
+  animation: appear 1s ease-out forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
