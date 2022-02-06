@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { Redirect, Route, Switch } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import Layout from "./Layout/Layout";
+import About from "./pages/About";
 
 function App() {
     return (

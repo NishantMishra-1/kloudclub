@@ -25,7 +25,7 @@ function Header() {
                         href="#portfolio"
                         className={colorChange ? "noChange change" : "noChange"}
                     >
-                        Klou
+                        Kloud
                         <span style={{ color: "#0099ff" }}>Club</span>
                     </a>
                 </h1>
