@@ -34,7 +34,7 @@ function Header() {
                 <ListItems1 className="extended">
                     <li>
                         <a
-                            href="#home"
+                            href="/home"
                             className={
                                 colorChange ? "noChange change" : "noChange"
                             }
@@ -44,7 +44,7 @@ function Header() {
                     </li>
                     <li>
                         <a
-                            href="#about"
+                            href="/about"
                             className={
                                 colorChange ? "noChange change" : "noChange"
                             }
@@ -65,7 +65,7 @@ function Header() {
                     </li>
                     <li>
                         <a
-                            href="#service"
+                            href="/services"
                             className={
                                 colorChange ? "noChange change" : "noChange"
                             }
@@ -75,7 +75,7 @@ function Header() {
                     </li>
                     <li>
                         <a
-                            href="#achievement"
+                            href="/contact"
                             className={
                                 colorChange ? "noChange change" : "noChange"
                             }
