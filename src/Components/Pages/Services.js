@@ -1,15 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import Card from "../Card";
+import "./Services";
+import image from "../../assets/Vector.png";
 // import Cloud from "../../assets/Cloud.png";
 function Services() {
     return (
         <Container>
-            <Banner>
+            {/* <Banner>
                 <Content>
                     <TagLine>Innovate, connect, inspire</TagLine>
                 </Content>
-            </Banner>
+            </Banner> */}
+            <section className="main">
+                <h1>Services</h1>
+                <img className="image" src={image} alt="wave" />
+            </section>
             <Cards>
                 <Card
                     head="Cloud Migration"
