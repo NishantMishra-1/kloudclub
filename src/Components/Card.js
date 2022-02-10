@@ -19,7 +19,7 @@ const Container = styled.div`
     margin: -100px 0 150px 0;
     background-color: white;
     width: 32%;
-    height: 620px;
+    height: 700px;
     text-align: center;
     padding: 20px;
     position: relative;
@@ -52,6 +52,8 @@ const Button = styled.a`
     bottom: 20px;
     padding: 10px 40px;
     border: 1px solid black;
+    color: black;
+    text-decoration: none;
     &:hover {
         background-color: black;
         color: white;
