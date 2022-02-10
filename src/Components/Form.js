@@ -35,7 +35,9 @@ const Form = () => {
       <div className="row">
         <div className="col-lg-9 col-md-15 mx-auto shadow border bg-white p-4 rounded">
           <h2 className="text-center fw-bold mb-3">Get in touch with us</h2>
-          <p className="text-center">Feel free to use the contact form below to contact us directly.</p>
+          <p className="text-center">
+            Feel free to use the contact form below to contact us directly.
+          </p>
           <form onSubmit={submitHandler}>
             <div id="form_alerts"></div>
             <div className="form-group mb-3">

@@ -1,0 +1,58 @@
+@import url("../App.css");
+.title {
+  height: 50vh;
+  width: 100%;
+  background: var(--main-color);
+}
+.title p {
+  line-height: 60vh;
+  color: white;
+  margin-left: 10%;
+  font-weight: lighter;
+  font-size: xxx-large;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formData {
+  margin: 5%;
+  width: 90%;
+}
+.form .personal_details,
+.area, .resume {
+  display: flex;
+  justify-content: space-between;
+}
+.area,
+.description, .resume {
+  margin-top: 50px;
+}
+.form input,
+.description textarea, select {
+  width: 45%;
+  height: 50px;
+  border: 1.5px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+}
+.description textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  max-height: fit-content;
+}
+.form .btn {
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    padding: 0;
+    background: #CA5217;
+    border: 1px solid #CA5217;
+    transition: transform .75s ease;
+}
+.form .btn:hover {
+    transform: scale(1.2);
+}
