@@ -30,15 +30,12 @@ const Jobs = () => {
       getDownloadURL(fileRef).then((url) => {
         setResumeUrl(url);
         URL = url;
-        // console.log(URL);
       });
-      // setResume(null);
     });
 
     setTimeout(() => sendDataToSheet(URL), 7000);
   };
   const sendDataToSheet = (URL) => {
-    // console.log(URL);
     axios
       .post(
         "https://sheet.best/api/sheets/75b4a4d9-7714-4515-ab0b-868862e27678",
