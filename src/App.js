@@ -5,6 +5,7 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import Layout from "./Layout/Layout";
 import About from "./pages/About";
+import Jobs from "./pages/Jobs";
 
 function App() {
     return (
@@ -18,6 +19,12 @@ function App() {
                 </Route>
                 <Route path="/services" exact>
                     <Services />
+                </Route>
+                <Route path="/about" exact>
+                    <About />
+                </Route>
+                <Route path="/jobs" exact>
+                    <Jobs />
                 </Route>
                 <Route path="*">
                     <Redirect to="/" />
