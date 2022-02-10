@@ -44,25 +44,26 @@ const Jobs = () => {
       setResume(null);
     });
 
-    
-
-    setTimeout(axios
-      .post(
-        "https://sheet.best/api/sheets/75b4a4d9-7714-4515-ab0b-868862e27678",
-        {
-          name: name,
-          resume: resumeUrl,
-          job: job,
-          description: description,
-          email: email,
-          contact: contact,
-          country: country,
-          date: new Date().toISOString().slice(0, 10),
-        }
-      )
-      .then((data) => {
-        
-      }), 4000)
+    setTimeout(
+      axios
+        .post(
+          "https://sheet.best/api/sheets/75b4a4d9-7714-4515-ab0b-868862e27678",
+          {
+            name: name,
+            resume: resumeUrl,
+            job: job,
+            description: description,
+            email: email,
+            contact: contact,
+            country: country,
+            date: new Date().toISOString().slice(0, 10),
+          }
+        )
+        .then((data) => {
+          setResumeUrl("");
+        }),
+      4000
+    );
   };
 
   return (
@@ -110,6 +111,7 @@ const Jobs = () => {
             </div>
             <div className="resume">
               <input
+                value={resume}
                 onChange={(e) => setResume(e.target.files[0])}
                 type="file"
                 placeholder="Resume"
