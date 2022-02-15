@@ -1,3 +1,156 @@
 :root {
     --main-color: #1087eb;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .home,
+  .services,
+  .products,
+  .contact-us,
+  .sign-up,
+  .marketing,
+  .consulting {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  
+  .home {
+    background-image: url('./images/img-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .services {
+    background-image: url('./images/img-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .products {
+    background-image: url('./images/img-3.jpg');
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .contact-us {
+    background-image: url('./images/img-4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .sign-up {
+    background-image: url('./images/img-7.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .marketing {
+    background-image: url('./images/img-6.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .consulting {
+    background-image: url('./images/img-5.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  .App{
+    position: absolute;
+    top: 269px;
+    left: 199px;
+     size: 10px;
+  }
+  .para{
+  
+   
+    font-size: 60px;
+    top: -202px;
+    position: relative;
+    left: 67px;
+
+
+  }
+
+  .bt{
+    padding: 1px 75px;
+    border-radius: 26px;
+    outline: none;
+    border: none;
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--primary);
+    top: 48px;
+    position: relative;
+    left: -163px;
+    text-decoration: none;
+}
+
+.bt:hover{
+  
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 12px;
+    border: 2px solid var(--primary);
+    
+} 
+.select{
+  right: -176px;
+  box-sizing: border-box;
+  border: 5px;
+  width: 20px;
+  border-radius: 10px;
+  position: relative;
+  top: -128px;
+}
+.image{
+  position: relative;
+  left: -286px;
+  top: 75px;
+}
+.imgs{
+  position: relative;
+  font-size: 20px;
+  left: -491px;
+  top: 28px;
+}
+.logo{
+  position: relative;
+  font-size: -134px;
+  top: -313px;
+  left: -1467px;
+  width: 21px;
+  height: -10px;
+}
