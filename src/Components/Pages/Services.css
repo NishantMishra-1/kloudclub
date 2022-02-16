@@ -1,19 +1,16 @@
 .main {
-    position: relative;
-    top: 80;
-    height: 90vh;
+    width: 100%;
+    height: 100vh;
     background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main h1 {
-    position: absolute;
     font-size: 3rem;
-    margin-left: 40vw;
     color: white;
-    line-height: 90vh;
     text-align: center;
 }
 .image {
     width: 100%;
-    position: absolute;
-    bottom: 0;
 }
