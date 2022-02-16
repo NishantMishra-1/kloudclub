@@ -65,6 +65,16 @@ function Header() {
                     </li>
                     <li>
                         <a
+                            href="/jobs"
+                            className={
+                                colorChange ? "noChange change" : "noChange"
+                            }
+                        >
+                            Jobs
+                        </a>
+                    </li>
+                    <li>
+                        <a
                             href="/services"
                             className={
                                 colorChange ? "noChange change" : "noChange"
