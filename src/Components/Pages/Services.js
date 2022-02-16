@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Card from "../Card";
-import "./Services.css";
 import image from "../../assets/Vector.png";
 import Fade from "react-reveal/Fade";
+import "./Services.css";
 // import Cloud from "../../assets/Cloud.png";
 function Services() {
     return (
@@ -13,9 +13,9 @@ function Services() {
                     <TagLine>Innovate, connect, inspire</TagLine>
                 </Content>
             </Banner> */}
-            <section className="main">
+            <section className="main2">
                 <h1>Services</h1>
-                <img className="image" src={image} alt="wave" />
+                <img className="image2" src={image} alt="wave" />
             </section>
             <Fade bottom>
                 <Cards>
