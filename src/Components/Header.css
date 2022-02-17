@@ -5,12 +5,13 @@
 }
 .navbar {
     color: white;
-    animation: fadeOut 0.5s ease-in-out forwards;
+    background-color: white;
+    /* animation: fadeOut 0.5s ease-in-out forwards; */
 }
 
 .navbar.changeColor {
     color: black;
-    animation: fadeIn 0.5s ease-in-out forwards;
+    /* animation: fadeIn 0.5s ease-in-out forwards; */
 }
 @keyframes fadeIn {
     0% {

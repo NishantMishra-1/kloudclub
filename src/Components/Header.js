@@ -5,21 +5,21 @@ import { BsTwitter, BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
 
 function Header() {
-    const [colorChange, setColorchange] = useState(false);
+    const [colorChange, setColorchange] = useState(true);
 
-    const changeNavbarColor = () => {
-        if (window.scrollY >= 80) {
-            setColorchange(true);
-        } else {
-            setColorchange(false);
-        }
-    };
-    window.addEventListener("scroll", changeNavbarColor);
+    // const changeNavbarColor = () => {
+    //     if (window.scrollY >= 80) {
+    //         setColorchange(true);
+    //     } else {
+    //         setColorchange(false);
+    //     }
+    // };
+    // window.addEventListener("scroll", changeNavbarColor);
 
     return (
         <Container className={colorChange ? "navbar changeColor" : "navbar"}>
             <Logo>
-                <img src="/Images/logo.png" alt="logo" />
+                <img src="/Images/logo.jpeg" alt="logo" />
                 <h1>
                     <a
                         href="#portfolio"
@@ -49,9 +49,10 @@ function Header() {
                                 colorChange ? "noChange change" : "noChange"
                             }
                         >
-                            About <IoIosArrowDown className="down" />
+                            About
+                            {/* <IoIosArrowDown className="down" /> */}
                         </a>
-                        <DropDown className="drop">
+                        {/* <DropDown className="drop">
                             <li>
                                 <a href="#us">About Us</a>
                             </li>
@@ -61,7 +62,17 @@ function Header() {
                             <li>
                                 <a href="#testimonial">Testimonial</a>
                             </li>
-                        </DropDown>
+                        </DropDown> */}
+                    </li>
+                    <li>
+                        <a
+                            href="/jobs"
+                            className={
+                                colorChange ? "noChange change" : "noChange"
+                            }
+                        >
+                            Jobs
+                        </a>
                     </li>
                     <li>
                         <a
@@ -131,8 +142,8 @@ const Logo = styled.div`
     display: flex;
     align-items: center;
     img {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
         border-radius: 100%;
         background: white;
         object-fit: center;
@@ -179,6 +190,7 @@ const ListItems1 = styled.ul`
     li a {
         text-decoration: none;
         color: grey;
+        color: black;
         font-size: 20px;
         padding: 5px;
         &:hover {

@@ -16,15 +16,16 @@ function Card({ head, para, image }) {
 export default Card;
 
 const Container = styled.div`
-    margin: -100px 0 150px 0;
+    // margin: -100px 0 150px 0;
+    margin-top: 50px;
     background-color: white;
-    width: 32%;
+    width: 31%;
     height: 700px;
     text-align: center;
     padding: 20px;
     position: relative;
     &:hover {
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
         transition: 0.1s ease-in;
         transform: scale(1.08);
     }
