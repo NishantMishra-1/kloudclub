@@ -49,9 +49,10 @@ function Header() {
                                 colorChange ? "noChange change" : "noChange"
                             }
                         >
-                            About <IoIosArrowDown className="down" />
+                            About
+                            {/* <IoIosArrowDown className="down" /> */}
                         </a>
-                        <DropDown className="drop">
+                        {/* <DropDown className="drop">
                             <li>
                                 <a href="#us">About Us</a>
                             </li>
@@ -61,7 +62,7 @@ function Header() {
                             <li>
                                 <a href="#testimonial">Testimonial</a>
                             </li>
-                        </DropDown>
+                        </DropDown> */}
                     </li>
                     <li>
                         <a
