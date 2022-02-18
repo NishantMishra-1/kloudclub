@@ -3,6 +3,7 @@ import styled from "styled-components";
 import "./Header.css";
 import { BsTwitter, BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function Header() {
     const [colorChange, setColorchange] = useState(true);
@@ -33,25 +34,25 @@ function Header() {
             <Options>
                 <ListItems1 className="extended">
                     <li>
-                        <a
-                            href="/home"
+                        <Link
+                            to="/home"
                             className={
                                 colorChange ? "noChange change" : "noChange"
                             }
                         >
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a
-                            href="/about"
+                        <Link
+                            to="/about"
                             className={
                                 colorChange ? "noChange change" : "noChange"
                             }
                         >
                             About
                             {/* <IoIosArrowDown className="down" /> */}
-                        </a>
+                        </Link>
                         {/* <DropDown className="drop">
                             <li>
                                 <a href="#us">About Us</a>
@@ -65,34 +66,34 @@ function Header() {
                         </DropDown> */}
                     </li>
                     <li>
-                        <a
-                            href="/jobs"
+                        <Link
+                            to="/jobs"
                             className={
                                 colorChange ? "noChange change" : "noChange"
                             }
                         >
                             Jobs
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a
-                            href="/services"
+                        <Link
+                            to="/services"
                             className={
                                 colorChange ? "noChange change" : "noChange"
                             }
                         >
                             Services
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a
-                            href="/contact"
+                        <Link
+                            to="/contact"
                             className={
                                 colorChange ? "noChange change" : "noChange"
                             }
                         >
                             Contact
-                        </a>
+                        </Link>
                     </li>
                 </ListItems1>
                 <ListItems2>
@@ -175,31 +176,31 @@ const Options = styled.div`
 `;
 
 const ListItems1 = styled.ul`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid grey;
-    @media (max-width: 764px) {
-        display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid grey;
+  @media (max-width: 764px) {
+    display: none;
+  }
+  li {
+    list-style: none;
+    margin-right: 30px;
+    border-bottom: 0px solid white;
+  }
+  li a {
+    text-decoration: none;
+    color: grey;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    &:hover {
+      color: #1087eb;
     }
-    li {
-        list-style: none;
-        margin-right: 30px;
-        border-bottom: 0px solid white;
+    @media (max-width: 960px) {
+      font-size: 15px;
     }
-    li a {
-        text-decoration: none;
-        color: grey;
-        color: black;
-        font-size: 20px;
-        padding: 5px;
-        &:hover {
-            color: orange;
-        }
-        @media (max-width: 960px) {
-            font-size: 15px;
-        }
-    }
+  }
 `;
 
 const DropDown = styled.ul`
@@ -215,27 +216,27 @@ const DropDown = styled.ul`
 `;
 
 const ListItems2 = styled.ul`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-    @media (max-width: 764px) {
-        display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  @media (max-width: 764px) {
+    display: none;
+  }
+  li {
+    list-style: none;
+    margin-right: 30px;
+    line-height: 40px;
+  }
+  li a {
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    &:hover {
+      color: #1087eb;
     }
-    li {
-        list-style: none;
-        margin-right: 30px;
-        line-height: 40px;
+    @media (max-width: 960px) {
+      font-size: 15px;
     }
-    li a {
-        text-decoration: none;
-        color: grey;
-        font-size: 20px;
-        &:hover {
-            color: orange;
-        }
-        @media (max-width: 960px) {
-            font-size: 15px;
-        }
-    }
+  }
 `;
