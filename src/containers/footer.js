@@ -12,9 +12,9 @@ export function FooterContainer() {
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-3 col-md-6 footer-contact" style={{color: "black"}}>
             <h3>Kloudclub</h3>
-            <p>
+            <p style={{color: "black"}}>
               62 Tennyson Dr.<br></br>
               Short Hills<br></br>
               New Jersey 07078 <br></br>
@@ -23,14 +23,14 @@ export function FooterContainer() {
             </p>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-2 col-md-6 footer-links" style={{color:"black"}}>
             <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            <ul style={{color: "black"}}>
+              <li><i class="bx bx-chevron-right"></i> <a style={{color: "black"}} href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a style={{color: "black"}} href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a style={{color: "black"}} href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a style={{color: "black"}} href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a style={{color: "black"}} href="#">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -38,7 +38,7 @@ export function FooterContainer() {
             
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
+          <div class="col-lg-4 col-md-6 footer-newsletter" style={{color: "black"}}>
             <h4>Join Our Newsletter</h4>
             <p>Be The First To Know</p>
             <form action="" method="post">
