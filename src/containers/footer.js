@@ -8,11 +8,11 @@ export function FooterContainer() {
     return (
         <>  
     <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+    <div className="footer-top">
+      <div className="container">
+        <div className="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact" style={{color: "black"}}>
+          <div className="col-lg-3 col-md-6 footer-contact" style={{color: "black"}}>
             <h3>Kloudclub</h3>
             <p style={{color: "black"}}>
               62 Tennyson Dr.<br></br>
@@ -23,26 +23,26 @@ export function FooterContainer() {
             </p>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links" style={{color:"black"}}>
+          <div className="col-lg-2 col-md-6 footer-links" style={{color:"black"}}>
             <h4>Useful Links</h4>
             <ul style={{color: "black"}}>
-              <li><i class="bx bx-chevron-right"></i> <a style={{color: "black"}} href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a style={{color: "black"}} href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a style={{color: "black"}} href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a style={{color: "black"}} href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a style={{color: "black"}} href="#">Privacy policy</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div className="col-lg col-md-6 footer-links">
             
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter" style={{color: "black"}}>
+          <div className="col-lg-4 col-md-6 footer-newsletter" style={{color: "black"}}>
             <h4>Join Our Newsletter</h4>
             <p>Be The First To Know</p>
             <form action="" method="post">
-              <input type="email" name="email"/><input type="submit" value="Subscribe" />
+              <input type="email" name="email"/><button>Submit</button>
             </form>
           </div>
 
@@ -50,23 +50,23 @@ export function FooterContainer() {
       </div>
     </div>
 
-    <div class="container d-md-flex py-4">
+    <div className="container d-md-flex py-4">
 
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
+      <div className="me-md-auto text-center text-md-start">
+        <div className="copyright">
           &copy; Copyright <strong><span>KloudClub</span></strong>. All Rights Reserved
         </div>
-        <div class="credits">
+        <div className="credits">
          
           Designed by <a href="">Ayush Gupta</a>
         </div>
       </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <div className="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
+        <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
+        <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
+        <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
+        <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
       </div>
       </div>
   </footer>
