@@ -71,6 +71,8 @@
   #footer .footer-top .footer-links ul a {
     color: rgba(255, 255, 255, 0.6);
     transition: 0.3s;
+    text-decoration: none;
+    color: black;
     display: inline-block;
     line-height: 1;
   }
@@ -107,28 +109,22 @@
     /* border: 1.5px solid black; */
     outline: 1px solid black;
     padding: 4px 8px;
+    border-radius: 5px;
     height: 35px;
     width: calc(100% - 100px);
   }
   
-  #footer .footer-newsletter form input[type="submit"] {
-    position: absolute;
-    top: 0;
-    right: -4px;
-    bottom: 0;
-    border: 0;
-    background: none;
-    font-size: 16px;
-    padding: 0 20px;
-    height: 42px;
-    background: #1bbd36;
+  #footer .footer-newsletter form button {
+    height: 38px;
+    margin-left: 5px;
+    border: 1px solid #1ed33c;
     color: white;
-    transition: 0.3s;
-    border-radius: 0 4px 4px 0;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 90px;
+    background:#1ed33c;
   }
   
-  #footer .footer-newsletter form input[type="submit"]:hover {
+  #footer .footer-newsletter form button:hover {
     background: #2ae149;
   }
   #footer .credits {
