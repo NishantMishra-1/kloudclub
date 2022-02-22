@@ -81,9 +81,9 @@ export function FooterContainer() {
                             </strong>
                             . All Rights Reserved
                         </div>
-                        <div className="credits">
+                        {/* <div className="credits">
                             Designed by <a href="">Ayush Gupta</a>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="social-links text-center text-md-right pt-3 pt-md-0">
                         <a href="#" className="twitter">
