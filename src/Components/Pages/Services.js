@@ -62,7 +62,7 @@ function Services() {
                 delectus suscipit expedita! Magnam asperiores voluptatem sit
                 suscipit. Ipsum totam tempora, porro optio reprehenderit iure
                 asperiores blanditiis at aspernatur dolore?"
-                        image="/Images/aspect2.png"
+                        image="/Images/BlockChain.png"
                     />
                     <Card
                         head="Ethical Hacking"
@@ -73,7 +73,7 @@ function Services() {
                 delectus suscipit expedita! Magnam asperiores voluptatem sit
                 suscipit. Ipsum totam tempora, porro optio reprehenderit iure
                 asperiores blanditiis at aspernatur dolore?"
-                        image="/Images/aspect2.png"
+                        image="/Images/Ethical Hacking.png"
                     />
                     <Card
                         head="Graphic Designing"

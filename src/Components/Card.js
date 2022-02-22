@@ -32,12 +32,10 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-    width: 150px;
-    height: 150px;
     background-size: cover;
 `;
 
-const Heading = styled.h2`
+const Heading = styled.h3`
     margin: 10px;
 `;
 
