@@ -3,6 +3,7 @@ import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import React, { useState } from "react";
 import storage from "../firebase/firebase";
 import "./Jobs.css";
+import JobCategories from '../Components/JobCategories'
 
 const Jobs = () => {
   const [name, setName] = useState("");
@@ -57,7 +58,7 @@ const Jobs = () => {
 
   return (
     <>
-      <div className="title">
+      {/* <div className="title">
         <p>Submit Resume</p>
       </div>
       <div className="details">
@@ -128,7 +129,8 @@ const Jobs = () => {
             <input className="btn" type="submit" placeholder="submit" />
           </form>
         </div>
-      </div>
+      </div> */}
+      <JobCategories />
     </>
   );
 };

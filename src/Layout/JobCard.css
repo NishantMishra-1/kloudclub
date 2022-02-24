@@ -1,0 +1,55 @@
+@import url('../App.css');
+section {
+    width: 40%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #ECEDF2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .25s ease-in;
+}
+button {
+     float: right;
+     width: 100px;
+     height: 30px;
+     display: none;
+     border: none;
+     border-radius: 5px;
+     color: white;
+}
+section:hover {
+    /* border: 0.25px solid grey; */
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+section:hover button {
+    display: block;
+    animation: appear 1s ease-in-out forwards;
+
+background: var(--main-color);
+}
+.holder {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    height: 200px;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
