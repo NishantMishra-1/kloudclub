@@ -1,16 +1,19 @@
 @import url('../App.css');
 section {
-    width: 40%;
-    height: 250px;
+    width: 94%;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
     border-radius: 15px;
     border: 1px solid #ECEDF2;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     transition: .25s ease-in;
 }
 button {
+    margin-top: 20px;
      float: right;
      width: 100px;
      height: 30px;
@@ -20,7 +23,6 @@ button {
      color: white;
 }
 section:hover {
-    /* border: 0.25px solid grey; */
     transform: scale(1.05);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -38,7 +40,7 @@ background: var(--main-color);
     align-items: center;
 }
 img {
-    height: 200px;
+    height: 150px;
 }
 @keyframes appear {
     from {
