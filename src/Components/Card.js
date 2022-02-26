@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-// import "../assets/AI.png"
 
 function Card({ head, para, image }) {
     return (
@@ -32,6 +31,8 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
+    width: 150px;
+    height: 150px;
     background-size: cover;
 `;
 
