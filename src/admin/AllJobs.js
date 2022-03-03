@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { db } from "../firebase/firebase";
-import JobCard from "../Layout/JobCard";
-import "./JobCategories.css";
+import JobDeleteCard from "../Layout/JobDeleteCard";
+import "./AllJobs.css";
 
-const JobCategories = (props) => {
+const AllJobs = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
@@ -22,18 +22,29 @@ const JobCategories = (props) => {
     };
     getData();
   }, []);
+
+  console.log(jobs);
+  console.log(jobs);
+  console.log(jobs.length);
+
+  const deleteHandler = async (d) => {
+    await deleteDoc(doc(db, "jobs", d.id));
+    window.location.reload(false);
+  };
   return (
     <>
-      <h2>Select the job category</h2>
-      <div className="job-categories">
-        <div class="jobs">
+      <div className="title">
+        <p>All jobs</p>
+      </div>
+      <div className="all_jobs_main">
+        <div className="all_jobs">
           {jobs.map((d) => {
             return (
-              <JobCard
-                onClick={props.onClick}
+              <JobDeleteCard
+                key={d.id}
                 title={d.title}
                 description={d.description}
-                key={d.id}
+                onClick={deleteHandler}
               />
             );
           })}
@@ -43,4 +54,4 @@ const JobCategories = (props) => {
   );
 };
 
-export default JobCategories;
+export default AllJobs;
