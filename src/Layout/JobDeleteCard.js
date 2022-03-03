@@ -1,8 +1,9 @@
-import React from "react";
-import Image from "../assets/Devops.png";
-import "./JobCard.css";
+import React, { useState } from "react";
 
-const JobCard = (props) => {
+import "./JobDeleteCard.css";
+
+const JobDeleteCard = (props) => {
+  const [deleteJob, setDeleteJobs] = useState("");
   return (
     <section className="holder_main">
       <div className="holder">
@@ -17,11 +18,13 @@ const JobCard = (props) => {
             <h4>{props.title}</h4>
             <p>{props.description}</p>
           </div>
-          <button className="job_apply_btn" onClick={props.onClick}>{props.type || "Apply"}</button>
+          <button className="job_delete_btn" onClick={props.onClick}>
+            Delete
+          </button>
         </div>
       </div>
     </section>
   );
 };
 
-export default JobCard;
+export default JobDeleteCard;
