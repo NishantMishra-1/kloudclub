@@ -1,5 +1,5 @@
 @import url('../App.css');
-section {
+.holder_main {
     width: 94%;
     height: 200px;
     display: flex;
@@ -12,7 +12,7 @@ section {
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     transition: .25s ease-in;
 }
-button {
+.job_apply_btn {
     margin-top: 20px;
      float: right;
      width: 100px;
@@ -22,11 +22,11 @@ button {
      border-radius: 5px;
      color: white;
 }
-section:hover {
+.holder_main:hover {
     transform: scale(1.05);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-section:hover button {
+.holder_main:hover .job_apply_btn {
     display: block;
     animation: appear 1s ease-in-out forwards;
 

@@ -4,7 +4,7 @@ import "./JobCard.css";
 
 const JobCard = (props) => {
   return (
-    <section>
+    <section className="holder_main">
       <div className="holder">
         <div>
           <img
@@ -17,7 +17,7 @@ const JobCard = (props) => {
             <h4>{props.title}</h4>
             <p>{props.description}</p>
           </div>
-          <button onClick={props.onClick}>Apply</button>
+          <button className="job_apply_btn" onClick={props.onClick}>Apply</button>
         </div>
       </div>
     </section>
