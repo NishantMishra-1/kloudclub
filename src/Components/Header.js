@@ -95,6 +95,16 @@ function Header() {
                             Contact
                         </Link>
                     </li>
+                    <li>
+                        <Link
+                            to="/jobs/admin"
+                            className={
+                                colorChange ? "noChange change" : "noChange"
+                            }
+                        >
+                            Post Job
+                        </Link>
+                    </li>
                 </ListItems1>
                 <ListItems2>
                     <li>

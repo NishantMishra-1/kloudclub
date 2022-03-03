@@ -3,6 +3,7 @@ import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import React, { useState } from "react";
 import storage from "../firebase/firebase";
 import "./Jobs.css";
+import JobCategories from '../Components/JobCategories'
 
 const Jobs = () => {
   const [name, setName] = useState("");
@@ -13,6 +14,11 @@ const Jobs = () => {
   const [description, setDescription] = useState("");
   const [job, setJob] = useState("");
   const [resumeUrl, setResumeUrl] = useState("");
+  const [category, setCategory] = useState(false);
+
+  const categoryChangeHandler = () =>{ 
+    setCategory(true)
+  }
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -57,10 +63,10 @@ const Jobs = () => {
 
   return (
     <>
-      <div className="title">
-        <p>Submit Resume</p>
+       <div className="title">
+        <p>Apply for the Job</p>
       </div>
-      <div className="details">
+      {category &&<div className="details">
         <div className="formData">
           <h2>General Information</h2>
           <hr />
@@ -128,7 +134,8 @@ const Jobs = () => {
             <input className="btn" type="submit" placeholder="submit" />
           </form>
         </div>
-      </div>
+      </div>}
+      {!category && <JobCategories onClick={categoryChangeHandler} />}
     </>
   );
 };
