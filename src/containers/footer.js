@@ -33,7 +33,7 @@ export function FooterContainer() {
                 <h4>Useful Links</h4>
                 <ul style={{ color: "black" }}>
                   <li>
-                    <i className="bx bx-chevron-right"></i> <a href="#">Home</a>
+                    <i className="bx bx-chevron-right"></i> <Link to="/">Home</Link>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>
