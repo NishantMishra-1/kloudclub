@@ -1,0 +1,45 @@
+@import url("../../App.css");
+.holder_main1 {
+    width: 48%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 1px solid #ecedf2;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    transition: 0.25s ease-in;
+}
+.holder_main1:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.holder_main1:hover .job_apply_btn {
+    display: block;
+    animation: appear 1s ease-in-out forwards;
+
+    background: var(--main-color);
+}
+.holder {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    height: 150px;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
