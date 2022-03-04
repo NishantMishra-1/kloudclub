@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import "./Header.css";
 import { BsTwitter, BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
-import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
+import logout from "../authentication/Logout";
 
 function Header() {
     const [colorChange, setColorchange] = useState(true);
@@ -16,6 +16,12 @@ function Header() {
     //     }
     // };
     // window.addEventListener("scroll", changeNavbarColor);
+
+    let loggedIn = localStorage.getItem("user");
+
+    const logoutHandler = () => {
+        logout()
+    }
 
     return (
         <Container className={colorChange ? "navbar changeColor" : "navbar"}>
@@ -95,16 +101,7 @@ function Header() {
                             Contact
                         </Link>
                     </li>
-                    <li>
-                        <Link
-                            to="/jobs/admin"
-                            className={
-                                colorChange ? "noChange change" : "noChange"
-                            }
-                        >
-                            Post Job
-                        </Link>
-                    </li>
+                    
                 </ListItems1>
                 <ListItems2>
                     <li>
@@ -126,6 +123,16 @@ function Header() {
                         <a href="#twitter">
                             <BsLinkedin />
                         </a>
+                    </li>
+                    <li>
+                        <Link
+                            to="/jobs/admin"
+                            className={
+                                colorChange ? "noChange change" : "noChange"
+                            }
+                        >
+                            {loggedIn !== "LOGGED_IN"? "Log In" : <button className="logoutBtn" onClick={logoutHandler}>Log Out</button>}
+                        </Link>
                     </li>
                 </ListItems2>
             </Options>

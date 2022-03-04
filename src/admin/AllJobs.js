@@ -6,6 +6,8 @@ import "./AllJobs.css";
 
 const AllJobs = () => {
   const [jobs, setJobs] = useState([]);
+  const [deleteJob, setDeleteJobs] = useState("");
+
 
   useEffect(() => {
     const getData = async () => {
@@ -28,7 +30,8 @@ const AllJobs = () => {
   console.log(jobs.length);
 
   const deleteHandler = async (d) => {
-    await deleteDoc(doc(db, "jobs", d.id));
+    // await deleteDoc(doc(db, "jobs", d.id));
+    console.log(d.target.value)
     window.location.reload(false);
   };
   return (

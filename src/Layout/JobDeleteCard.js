@@ -4,6 +4,9 @@ import "./JobDeleteCard.css";
 
 const JobDeleteCard = (props) => {
   const [deleteJob, setDeleteJobs] = useState("");
+  const setDeleteSelectJobHandler = () => {
+    setDeleteJobs(props.title)
+  }
   return (
     <section className="holder_main">
       <div className="holder">
@@ -18,7 +21,7 @@ const JobDeleteCard = (props) => {
             <h4>{props.title}</h4>
             <p>{props.description}</p>
           </div>
-          <button className="job_delete_btn" onClick={props.onClick}>
+          <button className="job_delete_btn" onClick={setDeleteSelectJobHandler}>
             Delete
           </button>
         </div>
