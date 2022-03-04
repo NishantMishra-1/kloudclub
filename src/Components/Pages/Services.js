@@ -49,7 +49,7 @@ function Services() {
                     <Card
                         head="Web Development"
                         para="Through real innovations and global delivery approaches, we create the most secure and scalable web apps. We use cutting-edge tools and technologies, as well as reinforced frameworks and tried-and-true techniques, to revolutionise your business. By carefully merging mature project development approaches with proven project management, Kloudclub gives you more control and clarity over your web development project."
-                        image="/Images/Web (2).png"
+                        image="/Images/Web.jpg"
                     />
                 </Cards>
                 <Cards>
@@ -102,46 +102,46 @@ const Container = styled.div`
     padding-bottom: 100px;
 `;
 
-const Banner = styled.div`
-    height: 100vh;
-    background-image: url("/Images/cloud.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-`;
+// const Banner = styled.div`
+//     height: 100vh;
+//     background-image: url("/Images/cloud.jpg");
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+//     background-size: cover;
+// `;
 
-const Content = styled.div`
-    width: 50%;
-    height: 400px;
-    background: inherit;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    &:before {
-        width: 110%;
-        height: 600px;
-        content: "";
-        background: inherit;
-        position: absolute;
-        left: -25px;
-        right: 0;
-        top: -25px;
-        bottom: 0;
-        box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.1);
-        filter: blur(10px);
-    }
-`;
+// const Content = styled.div`
+//     width: 50%;
+//     height: 400px;
+//     background: inherit;
+//     position: absolute;
+//     overflow: hidden;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 8px;
+//     &:before {
+//         width: 110%;
+//         height: 600px;
+//         content: "";
+//         background: inherit;
+//         position: absolute;
+//         left: -25px;
+//         right: 0;
+//         top: -25px;
+//         bottom: 0;
+//         box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.1);
+//         filter: blur(10px);
+//     }
+// `;
 
-const TagLine = styled.h1`
-    position: absolute;
-    text-align: center;
-`;
+// const TagLine = styled.h1`
+//     position: absolute;
+//     text-align: center;
+// `;
 
 const Cards = styled.div`
     margin: auto;
