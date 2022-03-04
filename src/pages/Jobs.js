@@ -3,7 +3,7 @@ import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import React, { useState } from "react";
 import storage from "../firebase/firebase";
 import "./Jobs.css";
-import JobCategories from '../Components/JobCategories'
+import JobCategories from "../Components/JobCategories";
 
 const Jobs = () => {
   const [name, setName] = useState("");
@@ -16,9 +16,9 @@ const Jobs = () => {
   const [resumeUrl, setResumeUrl] = useState("");
   const [category, setCategory] = useState(false);
 
-  const categoryChangeHandler = () =>{ 
-    setCategory(true)
-  }
+  const categoryChangeHandler = () => {
+    setCategory(true);
+  };
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -63,78 +63,80 @@ const Jobs = () => {
 
   return (
     <>
-       <div className="title">
+      <div className="title">
         <p>Apply for the Job</p>
       </div>
-      {category &&<div className="details">
-        <div className="formData">
-          <h2>General Information</h2>
-          <hr />
-          <form className="form" onSubmit={submitHandler}>
-            <div className="personal_details">
-              <input
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                type="text"
-                required
-                placeholder="Your name"
-              />
-              <input
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                type="email"
-                required
-                placeholder="Your email"
-              />
-            </div>
-            <div className="area">
-              <input
-                minLength={10}
-                value={contact}
-                onChange={(e) => setContact(e.target.value)}
-                type="number"
-                placeholder="Enter you number"
-                required
-              />
-              <input
-                value={country}
-                onChange={(e) => setCountry(e.target.value)}
-                type="txet"
-                placeholder="Country"
-                required
-              />
-            </div>
-            <div className="resume">
-              <input
-                onChange={(e) => setResume(e.target.files[0])}
-                type="file"
-                placeholder="Resume"
-                required
-              />
-              <select value={job} onChange={(e) => setJob(e.target.value)}>
-                <option defaultValue={"not mentioned"} hidden>
-                  select job
-                </option>
-                <option value="web development">web development</option>
-                <option value="cloud">cloud</option>
-                <option value="android">android</option>
-                <option value="ios">ios</option>
-                <option value="ui">ui/ux</option>
-                <option value="devops">devops</option>
-              </select>
-            </div>
-            <div className="description">
-              <textarea
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-                required
-                placeholder="Tell us about Yourself"
-              />
-            </div>
-            <input className="btn" type="submit" placeholder="submit" />
-          </form>
+      {category && (
+        <div className="details">
+          <div className="formData">
+            <h2>General Information</h2>
+            <hr />
+            <form className="form" onSubmit={submitHandler}>
+              <div className="personal_details">
+                <input
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  type="text"
+                  required
+                  placeholder="Your name"
+                />
+                <input
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="email"
+                  required
+                  placeholder="Your email"
+                />
+              </div>
+              <div className="area">
+                <input
+                  minLength={10}
+                  value={contact}
+                  onChange={(e) => setContact(e.target.value)}
+                  type="number"
+                  placeholder="Enter you number"
+                  required
+                />
+                <input
+                  value={country}
+                  onChange={(e) => setCountry(e.target.value)}
+                  type="txet"
+                  placeholder="Country"
+                  required
+                />
+              </div>
+              <div className="resume">
+                <input
+                  onChange={(e) => setResume(e.target.files[0])}
+                  type="file"
+                  placeholder="Resume"
+                  required
+                />
+                <select value={job} onChange={(e) => setJob(e.target.value)}>
+                  <option defaultValue={"not mentioned"} hidden>
+                    select job
+                  </option>
+                  <option value="web development">web development</option>
+                  <option value="cloud">cloud</option>
+                  <option value="android">android</option>
+                  <option value="ios">ios</option>
+                  <option value="ui">ui/ux</option>
+                  <option value="devops">devops</option>
+                </select>
+              </div>
+              <div className="description">
+                <textarea
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)}
+                  required
+                  placeholder="Tell us about Yourself"
+                />
+              </div>
+              <input className="btn" type="submit" placeholder="submit" />
+            </form>
+          </div>
         </div>
-      </div>}
+      )}
       {!category && <JobCategories onClick={categoryChangeHandler} />}
     </>
   );

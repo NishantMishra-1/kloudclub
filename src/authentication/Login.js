@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { useHistory, Redirect } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
@@ -27,7 +27,7 @@ const Login = () => {
         localStorage.setItem("user", "LOGGED_IN");
         if (localStorage.getItem("user")) {
           history.replace("/jobs/admin");
-          window.location.reload(false)
+          window.location.reload(false);
         }
         console.log("LOGGED_IN");
       });

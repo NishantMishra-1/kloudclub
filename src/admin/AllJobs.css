@@ -1,13 +1,63 @@
+.alljobs_holder {
+    width: 100%;
+}
 .all_jobs_main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
 }
 .all_jobs {
-    margin: 20px;
-    height: 80vh;
+  margin: 20px;
+  /* height: 80vh; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.add_job_holder {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 100vw;
+}
+.add_job_holder form {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+.add_job_holder form .add_job_inputs_holder {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    flex-direction: column;
+
+}
+.add_job_holder form .add_job_inputs_holder input {
+  margin: 10px;
+  height: 40px;
+  width: 90%;
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding: 10px;
+}
+.add_job_holder form .add_job_btn {
+    background: rgb(35, 194, 35);
+    color: #fff;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    transition: .35s ease-in;
+}
+.add_job_holder form .add_job_btn:hover {
+    transform: scale(1.1);
 }
