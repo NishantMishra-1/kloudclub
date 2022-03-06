@@ -18,7 +18,7 @@
     position: absolute;
     bottom: 0;
 }
-.submit {
+.submit_msg {
     display: flex;
     align-items: center;
     justify-content: center;
