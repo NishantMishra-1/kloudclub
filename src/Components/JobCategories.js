@@ -26,7 +26,7 @@ const JobCategories = (props) => {
     <>
       <h2>Select the job category</h2>
       <div className="job-categories">
-        <div class="jobs">
+        <div className="jobs">
           {jobs.map((d) => {
             return (
               <JobCard

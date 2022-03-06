@@ -28,7 +28,7 @@ function App() {
         <Route path="/jobs" exact>
           <Jobs />
         </Route>
-        {localStorage.getItem("user") != "LOGGED_IN" && (
+        {localStorage.getItem("user") !== "LOGGED_IN" && (
           <Route path="/jobs/admin" exact>
             <Login />
           </Route>
