@@ -1,9 +1,10 @@
 import React from "react";
-import "./Home.css";
+import {BsMouse} from 'react-icons/bs'
 import { Link } from "react-router-dom";
 import Heading from "./Components/Heading";
 import styled from "styled-components";
 import ServiceCard from "./Components/ServiceCard";
+import "./Home.css";
 
 export default function Home() {
   return (
@@ -16,12 +17,17 @@ export default function Home() {
               KLOUDCLUB enables organizations to accelerate and unleash new
               endless opportunities.
             </p>
+            <Link to="/jobs">
+              <ApplyBtn className="home-apply-btn">Explore Jobs</ApplyBtn>
+            </Link>
           </div>
           <div className="image">
             <div className="image-holder"></div>
           </div>
         </div>
       </div>
+      <h2 className="mouse"><BsMouse/></h2>
+      <h6>scroll</h6>
       <AboutSection>
         <Heading Topic="What We Do" />
         <section className="about">
@@ -135,3 +141,9 @@ const ServiceCards = styled.div`
   justify-content: space-between;
   margin: 30px;
 `;
+const ApplyBtn = styled.button`
+&:hover{
+  background: #1087eb;
+  color:white;
+}
+`

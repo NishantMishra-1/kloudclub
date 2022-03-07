@@ -48,3 +48,23 @@
     border: 2px solid var(--main-color);
     color: var(--main-color);
 }
+.home-apply-btn:hover {
+    color: white;
+}
+.mouse {
+    animation: bounce 1.5s linear infinite;
+}
+h6 {
+    text-align: center;
+    font-size: .7rem;
+    animation: bounce 1.5s linear infinite;
+}
+
+@keyframes bounce {
+    0%,100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}

@@ -119,7 +119,7 @@ function Header() {
               className={colorChange ? "noChange change" : "noChange"}
             >
               {loggedIn !== "LOGGED_IN" ? (
-                "Log In"
+                <button className="login">Log In</button>
               ) : (
                 <button className="logoutBtn" onClick={logoutHandler}>
                   Log Out

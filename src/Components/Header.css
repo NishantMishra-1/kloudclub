@@ -51,7 +51,7 @@
 .drop:hover {
     display: block;
 }
-.logoutBtn {
+.logoutBtn, .login {
     height: 40px;
     width: 100px;
     background: var(--main-color);
