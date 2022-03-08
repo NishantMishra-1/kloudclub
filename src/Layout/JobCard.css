@@ -1,4 +1,4 @@
-@import url('../App.css');
+@import url("../App.css");
 .holder_main {
     width: 94%;
     height: 200px;
@@ -7,20 +7,20 @@
     align-items: center;
     font-size: 1rem;
     border-radius: 15px;
-    border: 1px solid #ECEDF2;
+    border: 1px solid #ecedf2;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    transition: .25s ease-in;
+    transition: 0.25s ease-in;
 }
 .job_apply_btn {
     margin-top: 10px;
-     float: right;
-     width: 100px;
-     height: 30px;
-     display: none;
-     border: none;
-     border-radius: 5px;
-     color: white;
+    float: right;
+    width: 100px;
+    height: 30px;
+    display: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
 }
 
 .holder_main:hover {
@@ -31,7 +31,7 @@
     display: block;
     animation: appear 1s ease-in-out forwards;
 
-background: var(--main-color);
+    background: var(--main-color);
 }
 .holder {
     width: 70%;
@@ -53,6 +53,4 @@ img {
         opacity: 1;
         transform: translateY(0);
     }
-    
 }
-
