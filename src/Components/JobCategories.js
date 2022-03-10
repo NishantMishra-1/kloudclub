@@ -6,6 +6,7 @@ import "./JobCategories.css";
 
 const JobCategories = (props) => {
     const [jobs, setJobs] = useState([]);
+    const [flag, setFlag] = useState(false);
 
     useEffect(() => {
         const getData = async () => {
@@ -34,12 +35,11 @@ const JobCategories = (props) => {
                                 title={d.title}
                                 description={d.description}
                                 key={d.id}
+                                flag={flag}
+                                setFlag={setFlag}
                             />
                         );
                     })}
-                </div>
-                <div class="jd">
-                    <JobCard />
                 </div>
             </div>
         </>

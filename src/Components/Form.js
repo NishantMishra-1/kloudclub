@@ -87,9 +87,9 @@ const Form = () => {
                 autoComplete="off"
               ></textarea>
             </div>
-            <div className="submit">
+            <div className="submit_msg">
               <button
-                className="btn me-2"
+                className="btn me-2 msg_btn"
                 type="submit"
                 style={{ background: "green", color: "white" }}
               >

@@ -5,13 +5,12 @@ h2 {
 .job-categories {
     display: flex;
     justify-content: center;
+    align-items: start;
     height: 100vh;
+    /* height: 100vh; */
     margin: auto;
     width: 100%;
 }
 .jobs {
-    width: 40%;
-}
-.jd {
-    width: 40%;
+    width: 80%;
 }

@@ -1,18 +1,18 @@
 @import url("../App.css");
-.holder_main {
-    width: 94%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main {
+    width: 100%;
+    height: 180px;
     font-size: 1rem;
     border-radius: 15px;
     border: 1px solid #ecedf2;
+    background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     transition: 0.25s ease-in;
+    margin: 20px;
 }
-.job_apply_btn {
+/* .job_apply_btn {
+    margin: 5px;
     margin-top: 10px;
     float: right;
     width: 100px;
@@ -21,28 +21,65 @@
     border: none;
     border-radius: 5px;
     color: white;
+} */
+
+.main:hover {
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;
 }
 
-.holder_main:hover {
-    transform: scale(1.05);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.holder_main:hover .job_apply_btn {
-    display: block;
-    animation: appear 1s ease-in-out forwards;
-
-    background: var(--main-color);
-}
-.holder {
-    width: 70%;
+.hold {
+    width: 94%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
-img {
+.detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+}
+.detail img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    flex-wrap: wrap;
+}
+.skill {
+    margin: 5px;
+    background-color: black;
+    color: white;
+    padding: 4px 15px;
+    margin: 5px;
+    border-radius: 15px;
+}
+.more a {
+    text-decoration: none;
+    font-weight: 100;
+    border: 1px solid black;
+    padding: 8px 12px;
+    color: black;
+}
+.more a:hover {
+    color: white;
+    background-color: black;
+}
+#green {
+    color: green;
+    font-weight: 700;
+}
+/* img {
     height: 150px;
-}
+} */
 @keyframes appear {
     from {
         opacity: 0;
