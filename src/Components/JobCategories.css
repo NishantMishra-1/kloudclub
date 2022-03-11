@@ -3,13 +3,14 @@ h2 {
     margin-top: 20px;
 }
 .job-categories {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
     /* height: 100vh; */
     margin: auto;
     width: 100%;
 }
 .jobs {
-    margin: 30px;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(2,1fr);
+    width: 80%;
 }
