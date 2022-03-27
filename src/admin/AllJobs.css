@@ -11,10 +11,9 @@
   margin: 20px;
   /* height: 80vh; */
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+  gap: 10px;
 
+}
 .add_job_holder {
   margin: 20px;
   display: flex;
@@ -49,8 +48,9 @@
   border: 1px solid grey;
   padding: 10px;
 }
-.add_job_holder form .add_job_btn {
+.add_job_btn {
     background: rgb(35, 194, 35);
+    margin: 20px;
     color: #fff;
     height: 40px;
     width: 100px;
@@ -58,6 +58,6 @@
     border-radius: 10px;
     transition: .35s ease-in;
 }
-.add_job_holder form .add_job_btn:hover {
+.add_job_btn:hover {
     transform: scale(1.1);
 }

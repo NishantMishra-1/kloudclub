@@ -54,7 +54,7 @@
 .mouse {
     animation: bounce 1.5s linear infinite;
 }
-h6 {
+.mouse-scroll {
     text-align: center;
     font-size: .7rem;
     animation: bounce 1.5s linear infinite;

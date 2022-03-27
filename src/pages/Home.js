@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </div>
       <h2 className="mouse"><BsMouse/></h2>
-      <h6>scroll</h6>
+      <h6 className="mouse-scroll">scroll</h6>
       <AboutSection>
         <Heading Topic="What We Do" />
         <section className="about">
