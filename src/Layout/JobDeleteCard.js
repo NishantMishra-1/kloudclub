@@ -19,7 +19,7 @@ const JobDeleteCard = (props) => {
     <section className="main">
       <div className="hold">
         <div className="detail">
-          <img src="/img/kcloud.png" alt="" />
+          <img src="/Images/kcloud.png" alt="" />
           <div>
             <h5>{props.job.title}</h5>
             <div className="job-info-upper">
