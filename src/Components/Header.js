@@ -8,15 +8,6 @@ import logout from "../authentication/Logout";
 function Header() {
   const [colorChange, setColorchange] = useState(true);
 
-  // const changeNavbarColor = () => {
-  //     if (window.scrollY >= 80) {
-  //         setColorchange(true);
-  //     } else {
-  //         setColorchange(false);
-  //     }
-  // };
-  // window.addEventListener("scroll", changeNavbarColor);
-
   let loggedIn = localStorage.getItem("user");
 
   const logoutHandler = () => {
@@ -26,16 +17,16 @@ function Header() {
   return (
     <Container className={colorChange ? "navbar changeColor" : "navbar"}>
       <Logo>
-        <img src="/Images/logo.jpeg" alt="logo" />
-        <h1>
-          <a
+        <img src="/Images/kloudclub_logo.png" alt="logo" />
+        {/*<h1>
+{          <a
             href="#portfolio"
             className={colorChange ? "noChange change" : "noChange"}
           >
             Kloud
             <span style={{ color: "#0099ff" }}>Club</span>
           </a>
-        </h1>
+        </h1>*/}
       </Logo>
       <Options>
         <ListItems1 className="extended">
@@ -53,19 +44,7 @@ function Header() {
               className={colorChange ? "noChange change" : "noChange"}
             >
               About
-              {/* <IoIosArrowDown className="down" /> */}
             </Link>
-            {/* <DropDown className="drop">
-                            <li>
-                                <a href="#us">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#team">Team</a>
-                            </li>
-                            <li>
-                                <a href="#testimonial">Testimonial</a>
-                            </li>
-                        </DropDown> */}
           </li>
           <li>
             <Link
@@ -153,9 +132,8 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   img {
-    width: 80px;
+    width: 200px;
     height: 80px;
-    border-radius: 100%;
     background: white;
     object-fit: center;
     padding: 5px;

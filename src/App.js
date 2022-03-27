@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Jobs from "./pages/Jobs";
 import Login from "./authentication/Login";
 import AllJobs from "./admin/AllJobs";
+import JobPage from "./Components/JobPage";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route path="/jobs" exact>
           <Jobs />
+        </Route>
+        <Route path="/jobs/apply" exact>
+          <JobPage />
         </Route>
         {localStorage.getItem("user") !== "LOGGED_IN" && (
           <Route path="/jobs/admin" exact>

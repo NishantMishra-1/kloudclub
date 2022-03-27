@@ -7,7 +7,7 @@ import "./ContactUs.css";
 const ContactUs = () => {
   return (
     <>
-      <section className="main">
+      <section className="main-contact-us">
         <h1>Contact Us</h1>
         <img className="image" src={image} alt="wave" />
       </section>

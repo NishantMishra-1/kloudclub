@@ -1,35 +1,51 @@
 import React from "react";
 import { db } from "../firebase/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
-
-import "./JobDeleteCard.css";
+import { ImLocation } from "react-icons/im";
+import { MdTimeline } from "react-icons/md";
+import { GiDuration } from "react-icons/gi";
 
 const JobDeleteCard = (props) => {
   const setDeleteSelectJobHandler = async () => {
-    localStorage.setItem("job", props.title);
+    localStorage.setItem("job", props.job.title);
     console.log("deleted");
 
     console.log(localStorage.getItem("job"));
-    await deleteDoc(doc(db, "jobs", props.title));
+    await deleteDoc(doc(db, "jobs", props.job.title));
 
     window.location.reload(false);
   };
   return (
-    <section className="holder_main">
-      <div className="holder">
-        <div>
-          <img
-            src="https://www.windaydigital.com/wp-content/uploads/2020/12/39998-web-development.gif"
-            alt="Web"
-          />
-        </div>
-        <div>
+    <section className="main">
+      <div className="hold">
+        <div className="detail">
+          <img src="/img/kcloud.png" alt="" />
           <div>
-            <h4>{props.title}</h4>
-            <p>{props.description}</p>
+            <h5>{props.job.title}</h5>
+            <div className="job-info-upper">
+              <p>{props.job.name}</p>
+              <p> | posted on: {props.job.time}</p>
+            </div>
+            <div className="job-info-lower">
+              <p>
+                <ImLocation /> {props.job.location}
+              </p>
+              <p>
+                <MdTimeline /> {props.job.experience} yr
+              </p>
+              <p>
+                <GiDuration /> {props.job.type}
+              </p>
+            </div>
           </div>
+        </div>
+        <div className="more">
           <button
-            className="job_delete_btn"
+            style={{
+              backgroundColor: "salmon",
+              color: "white",
+              border: "none",
+            }}
             onClick={setDeleteSelectJobHandler}
           >
             Delete

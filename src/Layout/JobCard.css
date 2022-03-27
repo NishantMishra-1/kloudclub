@@ -11,18 +11,15 @@
     transition: 0.25s ease-in;
     margin: 20px;
 }
-/* .job_apply_btn {
-    margin: 5px;
-    margin-top: 10px;
-    float: right;
-    width: 100px;
-    height: 30px;
-    display: none;
-    border: none;
-    border-radius: 5px;
-    color: white;
-} */
-
+.job-info-upper, .job-info-lower {
+    display: flex;
+    /* text-transform: capitalize; */
+    font-size: 1.2rem;
+    gap: 2rem;
+}
+.job-info-lower {
+    width: 800px;
+}
 .main:hover {
     transform: scale(1.01);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;
@@ -56,22 +53,27 @@
 }
 .skill {
     margin: 5px;
-    background-color: black;
+    background-color: var(--main-color);
     color: white;
     padding: 4px 15px;
     margin: 5px;
     border-radius: 15px;
 }
-.more a {
+
+.more button {
     text-decoration: none;
     font-weight: 100;
-    border: 1px solid black;
+    border: 1px solid var(--main-color);
     padding: 8px 12px;
+    border-radius: 10px;
     color: black;
 }
-.more a:hover {
+.more button .link {
+    text-decoration: none;
+}
+.more button:hover {
     color: white;
-    background-color: black;
+    background-color: var(--main-color);
 }
 #green {
     color: green;

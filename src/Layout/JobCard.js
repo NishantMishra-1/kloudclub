@@ -1,52 +1,40 @@
 import React from "react";
-import Image from "../assets/Devops.png";
+import { ImLocation } from "react-icons/im";
+import { MdTimeline } from "react-icons/md";
+import { GiDuration } from "react-icons/gi";
 import "./JobCard.css";
 
 const JobCard = (props) => {
-    return (
-        <section className="main">
-            <div className="hold">
-                <div className="detail">
-                    <img src="/img/kcloud.png" alt="" />
-                    <div>
-                        <h5>{props.title}</h5>
-                        <p>KloudClub</p>
-                        <p>Address (On-site/Remote) </p>
-                        <div>{props.description}</div>
-                    </div>
-                </div>
-                <div className="skills">
-                    <div className="skill">React</div>
-                    <div className="skill">HTML</div>
-                    <div className="skill">CSS</div>
-                    <div className="skill">JavaScript</div>
-                    <div className="skill">Api</div>
-                    <div className="skill">OOPs</div>
-                    <div className="skill">React</div>
-                    <div className="skill">HTML</div>
-                    <div className="skill">CSS</div>
-                </div>
-                <div className="more">
-                    <a href="#">Know More-{">"}</a>
-                </div>
-                {/*<div>
-                    <img
-                        src="https://www.windaydigital.com/wp-content/uploads/2020/12/39998-web-development.gif"
-                        alt="Web"
-                    />
-                </div>
-                <div>
-                    <div>
-                        <h4>{props.title}</h4>
-                        <p>{props.description}</p>
-                    </div>
-                    <button className="job_apply_btn" onClick={props.onClick}>
-                        {props.type || "Apply"}
-                    </button>
-                </div> */}
+  return (
+    <section className="main">
+      <div className="hold">
+        <div className="detail">
+          <img src="/Images/kcloud.png" alt="" />
+          <div>
+            <h5>{props.job.title}</h5>
+            <div className="job-info-upper">
+              <p>{props.job.name}</p>
+              <p> | posted on: {props.job.time}</p>
             </div>
-        </section>
-    );
+            <div className="job-info-lower">
+              <p>
+                <ImLocation /> {props.job.location}
+              </p>
+              <p>
+                <MdTimeline /> {props.job.experience} yr
+              </p>
+              <p>
+                <GiDuration /> {props.job.type}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="more">
+          <button onClick={props.onClick}>Know More-{">"}</button>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default JobCard;

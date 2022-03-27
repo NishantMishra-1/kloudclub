@@ -10,7 +10,6 @@ const About = () => {
                 <h1>About Us</h1>
                 <img class="wave" src={image} alt="wave" />
             </section>
-            <h1 style={{ textAlign: "center" }}>About</h1>
             <section className="about">
                 <div className="about_inner">
                     <div className="about_inner_main">
