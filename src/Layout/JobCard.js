@@ -2,6 +2,7 @@ import React from "react";
 import { ImLocation } from "react-icons/im";
 import { MdTimeline } from "react-icons/md";
 import { GiDuration } from "react-icons/gi";
+import { MdOutlineAttachMoney } from "react-icons/md";
 import "./JobCard.css";
 
 const JobCard = (props) => {
@@ -25,6 +26,10 @@ const JobCard = (props) => {
               </p>
               <p>
                 <GiDuration /> {props.job.type}
+              </p>
+              <p>
+                <MdOutlineAttachMoney />
+                {props.job.ctc}
               </p>
             </div>
           </div>

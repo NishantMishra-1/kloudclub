@@ -4,6 +4,7 @@ import { deleteDoc, doc } from "firebase/firestore";
 import { ImLocation } from "react-icons/im";
 import { MdTimeline } from "react-icons/md";
 import { GiDuration } from "react-icons/gi";
+import { MdOutlineAttachMoney } from "react-icons/md";
 
 const JobDeleteCard = (props) => {
   const setDeleteSelectJobHandler = async () => {
@@ -35,6 +36,10 @@ const JobDeleteCard = (props) => {
               </p>
               <p>
                 <GiDuration /> {props.job.type}
+              </p>
+              <p>
+                <MdOutlineAttachMoney />
+                {props.job.ctc}
               </p>
             </div>
           </div>
