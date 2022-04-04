@@ -11,6 +11,8 @@ const AddNewJobForm = () => {
   const [companyDescription, setCompanyDescription] = useState("");
   const [jobType, setJobType] = useState("");
   const [location, setLocation] = useState("");
+  const [ctc, setCtc] = useState("");
+  const [contract, setContract] = useState("");
   const addJobHandler = async (event) => {
     event.preventDefault();
     setDescription("");
@@ -21,6 +23,8 @@ const AddNewJobForm = () => {
     setUrl("");
     setExperience("");
     setCompanyDescription("")
+    setCtc("");
+    setContract("")
     
     var today = new Date();
     var date =
@@ -38,7 +42,9 @@ const AddNewJobForm = () => {
       name: name,
       time: date,
       experience: experience,
-      companyDescription:companyDescription
+      companyDescription:companyDescription,
+      ctc : ctc,
+      contract: contract
     };
 
     // Add a new document in collection "jobs"
@@ -82,6 +88,22 @@ const AddNewJobForm = () => {
                 onChange={(e) => setUrl(e.target.value)}
                 type="text"
                 placeholder="Company Website Url"
+                required
+              />
+            </div>
+            <div className="area">
+              <input
+                value={experience}
+                onChange={(e) => setCtc(e.target.value)}
+                type="number"
+                placeholder="Expected CTC"
+                required
+              />
+              <input
+                value={url}
+                onChange={(e) => setContract(e.target.value)}
+                type="number"
+                placeholder="Contract / Bond"
                 required
               />
             </div>

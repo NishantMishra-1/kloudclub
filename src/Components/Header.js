@@ -17,7 +17,7 @@ function Header() {
   return (
     <Container className={colorChange ? "navbar changeColor" : "navbar"}>
       <Logo>
-        <img src="/Images/kloudclub_logo.png" alt="logo" />
+        <img src="/Images/kloud.PNG" alt="logo" />
         {/*<h1>
 {          <a
             href="#portfolio"
