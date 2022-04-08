@@ -37,10 +37,6 @@ const JobDeleteCard = (props) => {
               <p>
                 <GiDuration /> {props.job.type}
               </p>
-              <p>
-                <MdOutlineAttachMoney />
-                {props.job.ctc}
-              </p>
             </div>
           </div>
         </div>
