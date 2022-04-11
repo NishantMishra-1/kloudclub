@@ -45,8 +45,6 @@ const ViewJobModal = (props) => {
           <Typography variant="subtitle2">Type : {props.job.type}</Typography>
           <Typography variant="subtitle2">Posted on : {props.job.time}</Typography>
           <Typography variant="subtitle2">Company: {props.job.name}</Typography>
-          <Typography variant="subtitle2">CTC: {props.job.ctc}</Typography>
-          <Typography variant="subtitle2">Contract: {props.job.contract} years</Typography>
         </Box>
         <h5 style={{marginLeft: "20px", marginTop:"10px"}}>About the Company</h5>
         <DialogContent style={{ textAlign: "justify", width: "100%" }}>
